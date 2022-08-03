@@ -1,12 +1,13 @@
 body {
     background-color: #100F0F;
     margin: 0;
+    overflow: hidden;
 }
 .night {
-    height: 78.4vh;
+    height: 78.3vh;
     width: 100%;
     margin-top: 0%;
-    
+    bottom: 0%;
     /* background: url('../assets/Img_1.png'); */
     background-size: cover;
     position: relative;
