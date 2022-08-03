@@ -1,0 +1,74 @@
+body {
+    background-color: #100F0F;
+    margin: 0;
+}
+.night {
+    height: 78.4vh;
+    width: 100%;
+    margin-top: 0%;
+    
+    /* background: url('../assets/Img_1.png'); */
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.car {
+    position: absolute;
+    bottom: -11.5%;
+    left: 24%;
+    animation: suspension 1s linear infinite;
+}
+.container .night .car h1 {
+    font-size: 150px;
+    color: #D61C4E;
+}
+
+.surface {
+    height:  140px;
+    width: 500%;
+    background: url('../assets//Img_02.png');
+    position: absolute;
+    bottom: 0%;
+    background-repeat: repeat-x;
+    animation: moveRight 6s linear infinite;
+    
+}
+
+@keyframes moveRight {
+    100%{transform:translateX(-2950px);}
+}
+@keyframes suspension {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+.container {
+    display: block;
+    /* justify-content: center; */
+    text-align: center;
+}
+.container h1 #car {
+    color: #100F0F;
+}
+.container h1 {
+    font-size: 50px;
+    color: #F1F1F1;
+}
+#MenuButton {
+    margin: 10px;
+    font-size: 20px;
+    background-color : #D61C4E;
+}
+#CreateButton {
+    margin: 10px;
+    font-size: 20px;
+}
